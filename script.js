@@ -1,3 +1,7 @@
+function catSays(word) {
+    return console.log(word);
+}
+
 function animalTalks() {
     return catSays("Мяу") + " " +
         dogSays() + " " + //"Гав-гав"
