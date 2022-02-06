@@ -5,7 +5,7 @@ function catSays(word) {
 function pigeonSays(word) {
     return word;
 }
-   
+
 function ratSays(word) {
     return word;
 }
@@ -14,11 +14,11 @@ function dogSays() {
     return "Гав-гав";
 }
 function ferretSays(word) {
-    return word;
+    return "РРРР";
 }
 
 
-function tigerSays(word) {
+function tigerSays() {
     return word;
 }
 
