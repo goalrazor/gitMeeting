@@ -1,5 +1,8 @@
 function catSays(word) {
     return word;
+} 
+function snakeSays() {
+    return "Ш-ш-ш-ш-ш";
 }
 
 function pigeonSays(word) {
@@ -10,8 +13,12 @@ function ratSays(word) {
     return word;
 }
 
+function crowSays() {
+  return 'Кар';    
+}
+
 function dogSays() {
-    return "Гав-гав";
+  return "Гав-гав";
 }
 function ferretSays(word) {
     return (word);
