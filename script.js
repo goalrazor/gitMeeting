@@ -2,7 +2,6 @@ function goatSays(world) {
     return world;
 }
 
-
 function animalTalks() {
     return catSays("Мяу") + " " +
         dogSays() + " " + //"Гав-гав"
