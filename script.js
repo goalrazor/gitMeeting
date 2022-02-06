@@ -20,19 +20,21 @@ class Animal {
     }
 }
 
-class Cat extends Animal {
-    constructor(name, kindOfAnimal, typeOfFood, age, dangerous, jumpHieght) {
-        super(name, kindOfAnimal, typeOfFood, age, dangerous);
-        this.jumpHieght = jumpHieght;
-    }
+const dog = new Animal("Sambo", "dog", "any", "5", "not very dangerous");
 
-    jump() {
-        return `I'm jumping for ${this.jumpHieght} meters hieght`;
-    }
+
+const animalContainer = document.querySelector('.animal-container');
+const dogElement = animalContainer.querySelector('.dog');
+
+function animalTalks(animalElement, animalClass) {
+    animalElement.addEventListener('click', () => {
+        const animalTalks = animalElement.querySelector('.animal__talks');
+        animalTalks.textContent = animalClass.desciption();
+        animalTalks.classList.toggle('opened');
+    })
 }
 
-const cat = new Cat("Kitei", "cat", "any", "5", "not very dangerous", 100);
-
+animalTalks(dogElement, dog);
 
 cat.desciption();
 cat.talk("may");
