@@ -20,11 +20,24 @@ class Animal {
     }
 }
 
-const dog = new Animal("Sambo", "dog", "any", "5", "not very dangerous");
+const dog = new Animal("Harley", "dog", "any", "7", "not very dangerous");
+const rat = new Animal("Sambo", "rat", "any", "1", "not dangerous");
 
 
 const animalContainer = document.querySelector('.animal-container');
 const dogElement = animalContainer.querySelector('.dog');
+const ratElement = animalContainer.querySelector('.rat');
+
+const animals = {
+    dog: {
+        element: dogElement,
+        type: dog
+    },
+    rat: {
+        element: ratElement,
+        type: rat
+    }
+};
 
 function animalTalks(animalElement, animalClass) {
     animalElement.addEventListener('click', () => {
@@ -34,11 +47,9 @@ function animalTalks(animalElement, animalClass) {
     })
 }
 
-animalTalks(dogElement, dog);
-
-cat.desciption();
-cat.talk("may");
-console.log(cat.jump());
+for (const value of Object.values(animals)) {
+    animalTalks(value.element, value.type);
+}
 
 
 // function animalTalks() {
