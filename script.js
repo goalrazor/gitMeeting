@@ -2,6 +2,10 @@ function catSays(word) {
     return word;
 }
 
+function ratSays(word) {
+    return word;
+}
+
 function dogSays() {
     return "Гав-гав";
 }
