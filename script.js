@@ -14,8 +14,8 @@ function ferretSays(word) {
 }
 
 
-function tigerSays(word) {
-    return word;
+function tigerSays() {
+    return "РРРР";
 }
 
 function animalTalks() {
