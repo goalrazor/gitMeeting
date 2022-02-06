@@ -2,6 +2,10 @@ function catSays(word) {
     return word;
 }
 
+function pigeonSays(word) {
+    return word;
+}
+
 function animalTalks() {
     return catSays("Мяу") + " " +
         dogSays() + " " + //"Гав-гав"
