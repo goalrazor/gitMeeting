@@ -6,8 +6,12 @@ function ratSays(word) {
     return word;
 }
 
+function crowSays() {
+  return 'Кар';    
+}
+
 function dogSays() {
-    return "Гав-гав";
+  return "Гав-гав";
 }
 function ferretSays(word) {
     return word;
