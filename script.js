@@ -7,7 +7,7 @@ function ratSays(word) {
 }
 
 function crowSays() {
-    return 'Кар';    
+  return 'Кар';    
 }
 
 function dogSays() {
