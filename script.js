@@ -1,5 +1,5 @@
-function goatSays() {
-    return "Бээээ";
+function goatSays(world) {
+    return "world";
 }
 
 
