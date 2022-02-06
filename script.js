@@ -14,7 +14,7 @@ function dogSays() {
     return "Гав-гав";
 }
 function ferretSays(word) {
-    return "РРРР";
+    return (word);
 }
 
 
