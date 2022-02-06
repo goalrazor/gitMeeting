@@ -22,11 +22,14 @@ class Animal {
 
 const dog = new Animal("Harley", "dog", "any", "7", "not very dangerous");
 const rat = new Animal("Sambo", "rat", "any", "1", "not dangerous");
+const cat = new Animal("Ciri", "cat", "any", "2", "very dangerous");
+
 
 
 const animalContainer = document.querySelector('.animal-container');
 const dogElement = animalContainer.querySelector('.dog');
 const ratElement = animalContainer.querySelector('.rat');
+const catElement = animalContainer.querySelector('.cat');
 
 const animals = {
     dog: {
@@ -36,6 +39,10 @@ const animals = {
     rat: {
         element: ratElement,
         type: rat
+    },
+    cat: {
+        element: catElement,
+        type: cat
     }
 };
 
@@ -51,19 +58,3 @@ for (const animal of Object.values(animals)) {
     animalTalks(animal.element, animal.type);
 }
 
-
-// function animalTalks() {
-//     return catSays("Мяу") + " " +
-//         dogSays() + " " + //"Гав-гав"
-//         ratSays("Пи-пи-пи") + " " +
-//         crowSays() + " " + //"Кар"
-//         ferretSays("Кути-кути-кути") + " " +
-//         monkeySays() + " " +  //"У-а-а-а"
-//         frogSays("Ква-ква") + " " +
-//         tigerSays() + " " + //"РРРР"
-//         goatSays("Бээээ") + " " +
-//         snakeSays() + " " + //"Ашассах шассах"
-//         pigeonSays("Курлы-курлы");
-// }
-
-// console.log(animalTalks());
