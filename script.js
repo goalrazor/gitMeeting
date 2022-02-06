@@ -10,6 +10,10 @@ function dogSays() {
     return "Гав-гав";
 }
 
+function frogSays() {
+    return "Ква-ква";
+}
+
 function animalTalks() {
     return catSays("Мяу") + " " +
         dogSays() + " " + //"Гав-гав"
