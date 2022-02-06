@@ -9,6 +9,10 @@ function ratSays(word) {
 function dogSays() {
     return "Гав-гав";
 }
+function ferretSays(word) {
+    return word;
+}
+
 
 function animalTalks() {
     return catSays("Мяу") + " " +
