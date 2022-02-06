@@ -21,12 +21,16 @@ function dogSays() {
     return "Гав-гав";
 }
 
+function frogSays(word) {
+    return word;
+}
+
 function ferretSays(word) {
     return (word);
 }
 
-function tigerSays(word) {
-    return word;
+function tigerSays() {
+    return "РРРР";
 }
 
 function goatSays(world) {
