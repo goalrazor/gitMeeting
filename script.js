@@ -1,5 +1,5 @@
 function catSays(word) {
-    return console.log(word);
+    return word;
 }
 
 function animalTalks() {
