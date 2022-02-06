@@ -7,7 +7,7 @@ function ratSays(word) {
 }
 
 function dogSays(word) {
-    return "Гав-гав";
+    return word;
 }
 
 function frogSays(word) {
