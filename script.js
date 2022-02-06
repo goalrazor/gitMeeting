@@ -14,6 +14,10 @@ function ferretSays(word) {
 }
 
 
+function tigerSays(word) {
+    return word;
+}
+
 function animalTalks() {
     return catSays("Мяу") + " " +
         dogSays() + " " + //"Гав-гав"
