@@ -47,8 +47,8 @@ function animalTalks(animalElement, animalClass) {
     })
 }
 
-for (const value of Object.values(animals)) {
-    animalTalks(value.element, value.type);
+for (const animal of Object.values(animals)) {
+    animalTalks(animal.element, animal.type);
 }
 
 
