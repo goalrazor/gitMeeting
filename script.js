@@ -1,3 +1,30 @@
+function catSays(word) {
+    return word;
+}
+function snakeSays() {
+    return "Ш-ш-ш-ш-ш";
+}
+
+function ratSays(word) {
+    return word;
+}
+
+function crowSays() {
+    return 'Кар';
+}
+
+function dogSays() {
+    return "Гав-гав";
+}
+
+function ferretSays(word) {
+    return word;
+}
+
+function tigerSays(word) {
+    return word;
+}
+
 function goatSays(world) {
     return world;
 }
