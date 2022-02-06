@@ -5,6 +5,22 @@ function catSays(word) {
 function pigeonSays(word) {
     return word;
 }
+   
+function ratSays(word) {
+    return word;
+}
+
+function dogSays() {
+    return "Гав-гав";
+}
+function ferretSays(word) {
+    return word;
+}
+
+
+function tigerSays(word) {
+    return word;
+}
 
 function animalTalks() {
     return catSays("Мяу") + " " +
