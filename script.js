@@ -1,3 +1,8 @@
+function goatSays() {
+    return "Бээээ";
+}
+
+
 function animalTalks() {
     return catSays("Мяу") + " " +
         dogSays() + " " + //"Гав-гав"
