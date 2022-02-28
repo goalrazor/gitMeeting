@@ -46,6 +46,9 @@ const animals = {
     }
 };
 
+function tigerSays() {
+    return "РРРР";
+}
 function animalTalks(animalElement, animalClass) {
     animalElement.addEventListener('click', () => {
         const animalTalks = animalElement.querySelector('.animal__talks');
@@ -57,4 +60,3 @@ function animalTalks(animalElement, animalClass) {
 for (const animal of Object.values(animals)) {
     animalTalks(animal.element, animal.type);
 }
-
