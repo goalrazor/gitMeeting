@@ -1,39 +1,63 @@
-function catSays(word) {
-    return word;
+class Animal {
+    constructor(name, kindOfAnimal, typeOfFood, age, dangerous) {
+        this.name = name;
+        this.kindOfAnimal = kindOfAnimal;
+        this.typeOfFood = typeOfFood;
+        this.age = age;
+        this.dangerous = dangerous;
+    }
+
+    desciption() {
+        return `Hello, my name is ${this.name}. I'm ${this.kindOfAnimal} and i like to eat ${this.typeOfFood}. I'm ${this.age} age old and I'm ${this.dangerous}`
+    }
+
+    talk(word) {
+        return word;
+    }
+
+    walk(speed) {
+        return "Running speed is - " + speed;
+    }
 }
 
-function ratSays(word) {
-    return word;
-}
+const dog = new Animal("Harley", "dog", "any", "7", "not very dangerous");
+const rat = new Animal("Sambo", "rat", "any", "1", "not dangerous");
+const cat = new Animal("Ciri", "cat", "any", "2", "very dangerous");
 
-function crowSays() {
-  return 'Кар';    
-}
 
-function dogSays() {
-  return "Гав-гав";
-}
-function ferretSays(word) {
-    return word;
-}
 
+const animalContainer = document.querySelector('.animal-container');
+const dogElement = animalContainer.querySelector('.dog');
+const ratElement = animalContainer.querySelector('.rat');
+const catElement = animalContainer.querySelector('.cat');
+
+const animals = {
+    dog: {
+        element: dogElement,
+        type: dog
+    },
+    rat: {
+        element: ratElement,
+        type: rat
+    },
+    cat: {
+        element: catElement,
+        type: cat
+    }
+};
 
 function tigerSays() {
     return "РРРР";
+function animalTalks(animalElement, animalClass) {
+    animalElement.addEventListener('click', () => {
+        const animalTalks = animalElement.querySelector('.animal__talks');
+        animalTalks.textContent = animalClass.desciption();
+        animalTalks.classList.toggle('opened');
+    })
 }
 
-function animalTalks() {
-    return catSays("Мяу") + " " +
-        dogSays() + " " + //"Гав-гав"
-        ratSays("Пи-пи-пи") + " " +
-        crowSays() + " " + //"Кар"
-        ferretSays("Кути-кути-кути") + " " +
-        monkeySays() + " " +  //"У-а-а-а"
-        frogSays("Ква-ква") + " " +
-        tigerSays() + " " + //"РРРР"
-        goatSays("Бээээ") + " " +
-        snakeSays() + " " + //"Ашассах шассах"
-        pigeonSays("Курлы-курлы");
+for (const animal of Object.values(animals)) {
+    animalTalks(animal.element, animal.type);
 }
 
-console.log(animalTalks());
+}
